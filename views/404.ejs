@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Set the background color to Discord's dark blue */
+      body {
+        background-color: #36393f;
+      }
+
+      /* Use the Open Sans font */
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      /* Add a border and padding to the article */
+      .card {
+        border: 1px solid white;
+        padding: 10px;
+        margin: 20px;
+      }
+
+      /* Add a background color to the article */
+      .card-body {
+        background-color: #7289da;
+      }
+      /* Style the delete button */
+      button {
+        background-color: #5f73b9;
+        color: white;
+        border-radius: 4px;
+        padding: 8px 12px;
+        border: none;
+        font-size: 14px;
+        margin-top: 20px;
+      }
+
+      button:hover {
+        background-color: #4c5e9c;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #7289da" class="card">
+      <div class="card-body">
+        <h1 class="card-title">404 Not Found</h1>
+        <p class="card-text">The page you are looking for cannot be found.</p>
+        <button
+          onclick="window.location.assign('/')"
+          style="color: white; text-decoration: none"
+        >
+          Go Back
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

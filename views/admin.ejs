@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Set the background color to Discord's dark blue */
+      body {
+        background-color: #36393f;
+      }
+      /* Set the text color to white */
+      h1,
+      label,
+      input,
+      textarea,
+      button {
+        color: white;
+      }
+      /* Use the Open Sans font */
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      /* Style the input and textarea fields to look like Discord input fields */
+      input,
+      textarea {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      label {
+        display: block;
+      }
+
+      /* Style the submit button to look like Discord buttons */
+      button {
+        background-color: #7289da;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      /* Add hover effect to the button */
+      button:hover {
+        background-color: #5e6ac1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Authenticate first</h1>
+    <form action="/auth" method="post">
+      <label for="pass">Password:</label>
+      <input type="text" id="pass" name="pass" />
+      <br />
+      <button type="submit">Submit</button>
+      <button
+        type="button"
+        onclick="window.location.assign('/')"
+        style="color: white; text-decoration: none"
+      >Back</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Set the background color to Discord's dark blue */
+      body {
+        background-color: #36393f;
+      }
+      /* Set the text color to white */
+      h1,
+      label,
+      input,
+      textarea,
+      button {
+        color: white;
+      }
+      /* Use the Open Sans font */
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      /* Style the input and textarea fields to look like Discord input fields */
+      .input {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        width: calc(100vw - 40px);
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .label {
+        display: block;
+      }
+
+      /* Style the submit button to look like Discord buttons */
+      button {
+        background-color: #7289da;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      /* Add hover effect to the button */
+      button:hover {
+        background-color: #5e6ac1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Article</h1>
+    <form action="/add" method="post" enctype="multipart/form-data">
+      <label class="label" for="title">Title:</label>
+      <input class="input" type="text" id="title" name="title" />
+      <br />
+      <label class="label" for="content">Content:</label>
+      <textarea class="input" id="content" name="content"></textarea>
+      <br />
+      <label class="label" for="image">Cover:</label>
+      <input class="input" type="file" name="image" />
+      <br />
+      <label class="label" for="image">PDF:</label>
+      <input class="input" type="file" name="pdf" />
+      <br />
+      <input type="checkbox" id="teacher" name="teacher" value="teacher">
+      <label for="teacher">Teacher's corner</label><br /><br />
+      <button type="submit">Add</button>
+      <button
+        type="button"
+        onclick="window.location.assign('/')"
+        style="color: white; text-decoration: none"
+      >Back</button>
+    </form>
+  </body>
+</html>
