@@ -1,0 +1,4 @@
+node_modules
+replit.nix
+package-lock.json
+json.sqlite
